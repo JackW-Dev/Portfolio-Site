@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Jack's portfolio site landing page">
+      <meta name="author" content="Jack Walker">
+      <title>⌈ J a c k W ⌋</title>
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="application-name" content="⌈ J a c k W ⌋">
+      <meta name="apple-mobile-web-app-title" content="⌈ J a c k W ⌋">
+      <meta name="theme-color" content="#000000">
+      <meta name="msapplication-navbutton-color" content="#000000">
+      <meta name="msapplication-starturl" content="/index.html">
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
+      <link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="manifest" href="webmanifest.json" crossorigin="use-credentials"/>
+   </head>
+   
+   <body>
+    <div id="navbar">
+      <h1 class="titleAnim">> Hello World</h1>
+      <br>
+      > You made it this far
+      <br>
+      > Why not keep going?
+      <br>
+      <br>
+      <a href="intro.html">
+        <img id="introImg" src="assets/lain_telephone_pole.webp" alt="Gif of telephone pole - click to enter site">
+        <br>
+        [Enter]
+      </a>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+              .register("sw.js")
+              .then(function() {
+                  console.log("Service Worker registered");
+              })
+              .catch(error => console.log(`Error - ${error}`));
+      } else {
+          console.log("Service Worker failed to register");
+      }
+    </script>
+   </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Jack's portfolio site homepage">
+      <meta name="author" content="Jack Walker">
+      <title>⌈ J a c k W ⌋</title>
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="application-name" content="⌈ J a c k W ⌋">
+      <meta name="apple-mobile-web-app-title" content="⌈ J a c k W ⌋">
+      <meta name="theme-color" content="#000000">
+      <meta name="msapplication-navbutton-color" content="#000000">
+      <meta name="msapplication-starturl" content="/index.html">
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
+      <link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="manifest" href="webmanifest.json" crossorigin="use-credentials"/>
+   </head>
+   
+   <body>
+    <div id="navbar" >
+      <h1 class="titleAnim">> Hello World</h1>
+      <br>
+      > Welcome to my site
+      <br>
+      > Have you been here before?
+      <br>
+      > Take a look around, try not to get lost
+      <br>
+      <br>
+      <div class="navline">
+        <a href="/about.html">[about]</a>
+        <a href="/portfolio.html">[portfolio]</a>
+        <a href="/certs.html">[certs]</a>
+        <a href="/contact.html">[contact]</a>
+      </div>
+      <br>
+    </div>
+
+    <div class="article">
+      <h1 class="titleAnim">> Blast off</h1>
+      <h5 class="author">Jack Walker</h5>
+      <h5 class="date">30/04/2023</h5>
+      <br>
+      <p>Hello! Welcome! This is my new site, I hope you like it!</p>
+      <p>I took a "back to basics" approach with this one and was heavily inspired by old GeoCities sites.</p>
+      <p>I think the simplicity makes it a lot easier to follow. It's able to look good without being over the top with it and I quite like that :)</p>
+      <p>Any feedback would be greatly appreciated!
+      <p class="social"><a href="/contact.html">[contact]</a></p>
+      <p>Please, take a look around, make yourself at home!</p>
+      <p>I hope you find what you're looking for.</p>
+      <br>
+      <br>
+    </div>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+              .register("sw.js")
+              .then(function() {
+                  console.log("Service Worker registered");
+              })
+              .catch(error => console.log(`Error - ${error}`));
+      } else {
+          console.log("Service Worker failed to register");
+      }
+    </script>
+   </body>
+
+   <footer>
+    <div class="article">
+      <h1>> Get In Touch</h1>
+      <br>
+      <div class="navline">
+        <a href="mailto:info@jackwalker.dev">[Email]</a>
+        <a href="https://github.com/JackW-Dev">[GitHub]</a>
+        <a href="https://www.linkedin.com/in/jack-d-walker/">[LinkedIn]</a>
+        <a href="https://twitter.com/nihilist_01">[Twitter]</a>
+      </div>
+      <p class="copy"> Copyright &copy; 2023 </p>
+      <br>
+    </div>
+   </footer>
+</html>

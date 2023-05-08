@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Jack's portfolio site PAGENAME">
+      <meta name="author" content="Jack Walker">
+      <title>⌈ J a c k W ⌋</title>
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="application-name" content="⌈ J a c k W ⌋">
+      <meta name="apple-mobile-web-app-title" content="⌈ J a c k W ⌋">
+      <meta name="theme-color" content="#000000">
+      <meta name="msapplication-navbutton-color" content="#000000">
+      <meta name="msapplication-starturl" content="/index.html">
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
+      <link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="manifest" href="webmanifest.json" crossorigin="use-credentials"/>
+   </head>
+   
+   <body>
+    <div id="navbar" >
+      <h1 class="titleAnim">> About</h1>
+      <br>
+      > What would you like to know?
+      <br>
+      <br>
+      <div class="navline">
+        <a href="/intro.html">[home]</a>
+        <a href="/portfolio.html">[portfolio]</a>
+        <a href="/certs.html">[certs]</a>
+        <a href="/contact.html">[contact]</a>
+      </div>
+      <br>
+    </div>
+
+    <div class="article">
+      <h1 class="titleAnim">> Who Am I?</h1>
+      <h5 class="author">Jack Walker</h5>
+      <h5 class="date">01/05/2023</h5>
+      <br>
+      <br>
+      <h3>Technical Profile</h3>
+      <p>I'm a software engineer currently working for Capgemini on the HMRC account.</p>
+      <p>Graduated from Staffordshire University in 2021 with a First Class Honours Bachelors degree in Computer Science. You can view example work from my time at uni at the link below</p>
+      <p><a href="/portfolio.html">[portfolio]</a></p>
+      <p>In my daily work, I work with Java Spring Boot and Batch applications, PL/SQL, Bash/Ksh scripting, the ALMTools suite (BitBucket, Bamboo) and a few other technologies and tools.</p>
+      <p>I am very interested in AI and Machine Learning, embedded systems, and Android app development - a bit of an odd mix I know, but I found that at uni I really enjoyed all of these areas for completely different reasons</p>
+      <p>AI/ML in particular I am very interested in. I don't work with it day-to-day, but do work on some personal projects that involve it heavily.</p>
+      <p>Certified and working towards gaining more certifications - view details at the below link</p>
+      <p><a href="/certs.html">[certs]</a></p>
+      <h3>Personal Profile</h3>
+      <p>I'm not a texbook "nerd" but 100% still am a nerd don't be mistaken. I <i>try</i> to keep up with tech news and advancements, and actually do some programming in my spare time as hobby work. There's not really any main focus of this, it's just whatever I feel like doing on the day.</p>
+      <p>In my spare time I listen to <i>a lot</i> of music, sometimes play video games, and binge watch shows (a terrible habit, I know).</p>
+      <p>I collect vinyl records (yes, in this day and age), and go to my fair share of concerts. Interested? You can check out my last.fm, discogs, and setlist.fm below :)</p>
+      <p>
+        <a href="https://www.last.fm/user/Nihilist_01">[last.fm]</a>
+        <a href="https://www.discogs.com/user/Nihilist_">[discogs]</a>
+        <a href="https://www.setlist.fm/user/Nihilist_">[setlist.fm]</a>
+      </p>
+      <p>Once a year, usually for about a month, I'll watch anime. Find me metrics for watched shows below.</p>
+      <p><a href="https://anilist.co/user/nihilist01/">[AniList]</a></p>
+      <br>
+      <br>
+    </div>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+              .register("sw.js")
+              .then(function() {
+                  console.log("Service Worker registered");
+              })
+              .catch(error => console.log(`Error - ${error}`));
+      } else {
+          console.log("Service Worker failed to register");
+      }
+    </script>
+   </body>
+
+   <footer>
+    <div class="article">
+      <h1>Get In Touch</h1>
+      <br>
+      <div class="navline">
+        <a href="mailto:info@jackwalker.dev">[Email]</a>
+        <a href="https://github.com/JackW-Dev">[GitHub]</a>
+        <a href="https://www.linkedin.com/in/jack-d-walker/">[LinkedIn]</a>
+        <a href="https://twitter.com/nihilist_01">[Twitter]</a>
+      </div>
+      <p class="copy"> Copyright &copy; 2023 </p>
+      <br>
+    </div>
+   </footer>
+</html>
